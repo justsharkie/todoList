@@ -6,7 +6,6 @@
         .card {
             margin: 100px;
         }
-
     </style>
     <meta charset="UTF-8">
     <title>Todo List</title>
@@ -22,18 +21,23 @@
                 <input type="text" />
                 <input type="submit" class="btn btn-info" />
             </div>
-            <div class="card-block">
-                <label class="form-check-label">
+            <div class="card-block row">
+                <label class="form-check-label col-md-8">
                     <input type="checkbox" class="form-check-input" />
                     Todo List Item
+                    <p>Due Date</p>
                 </label>
+                <a href="#" class="col-md-1">Edit</a>
+                <a href="#" class="col-md-1 offset-1">Delete</a>
             </div>
             <div class="card-block">
-                <div class="form-check disabled">
-                    <label class="form-check-label">
+                <div class="form-check disabled row">
+                    <label class="form-check-label col-md-8">
                         <input type="checkbox" class="form-check-input">
                         Completed Todo List Item
+                        <p class="text-right">Completed on...</p>
                     </label>
+                    <a href="#" class="col-md-1">Uncomplete</a>
                 </div>
             </div>
         </div>
