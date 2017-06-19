@@ -7,6 +7,7 @@
     font-family: 'Bubbler One', sans-serif;
     margin-top: 20px;
 }
+
 .custom-check {
     background-image: url(../img/glyphicons-unchecked.png);
     height: 18px;
@@ -14,6 +15,7 @@
     display: inline-block;
     margin-bottom: -3px;
 }
+
 .seperator {
     width: 100%;
     border: 2px solid transparent;
@@ -31,3 +33,6 @@ label input {
     overflow: hidden;
 }
 
+.submit {
+    margin-top: 15px;
+}
