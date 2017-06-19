@@ -2,38 +2,42 @@
 <html lang="en">
 
 <head>
-    <style>
-        .card {
-            margin: 100px;
-        }
-    </style>
     <meta charset="UTF-8">
     <title>Todo List</title>
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
 </head>
 
 <body class="bg-secondary">
     <section class="row">
         <div class="col-md-4 offset-4 card row">
-            <h3 class="card-header text-center text-muted bg-secondary">todo</h3>
-            <div class="card-block col-sm-12">
+            <h1 class="card-title text-center text-muted">todo</h1>
+            <div class="seperator"></div>
+            <div class="card-block col-sm-10 offset-1">
+               <p>Add a new Todo Item:</p>
                 <input type="text" />
                 <input type="submit" class="btn btn-info" />
             </div>
+            <div class="seperator"></div>
             <div class="card-block row">
                 <label class="form-check-label col-md-8">
                     <input type="checkbox" class="form-check-input" />
+                    <span class="custom-check"></span>
                     Todo List Item
-                    <p>Due Date</p>
+                    <p class="text-right">Due Date</p>
                 </label>
                 <a href="#" class="col-md-1">Edit</a>
                 <a href="#" class="col-md-1 offset-1">Delete</a>
             </div>
+            <div class="seperator"></div>
             <div class="card-block">
                 <div class="form-check disabled row">
-                    <label class="form-check-label col-md-8">
-                        <input type="checkbox" class="form-check-input">
+                    <label class="form-check-label col-md-8 disabled">
+                        <img src="img/glyphicons-check.png" alt="Checked Box. ">
                         Completed Todo List Item
                         <p class="text-right">Completed on...</p>
                     </label>
