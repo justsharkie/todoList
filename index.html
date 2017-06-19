@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .card {
+            margin: 100px;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <title>Todo List</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+</head>
+
+<body class="bg-secondary">
+    <section class="row">
+        <div class="col-md-4 offset-4 card row">
+            <h3 class="card-header text-center text-muted bg-secondary">todo</h3>
+            <div class="card-block col-sm-12">
+                <input type="text" />
+                <input type="submit" class="btn btn-info" />
+            </div>
+            <div class="card-block">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" />
+                    Todo List Item
+                </label>
+            </div>
+            <div class="card-block">
+                <div class="form-check disabled">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input">
+                        Completed Todo List Item
+                    </label>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
