@@ -14,34 +14,32 @@
 
 <body class="bg-secondary">
     <section class="row">
-        <div class="col-md-4 offset-4 card row">
+        <div class="col-lg-4 offset-lg-4 col-md-6 offset-md-2 col-sm-12 card row">
             <h1 class="card-title text-center text-muted">todo</h1>
             <div class="seperator"></div>
             <div class="card-block">
-                <p class="text-center">Add a new Todo Item:</p>
-                <label class="col-md-4 text-right">Description:</label>
-                <input type="text" />
-                <label class="col-md-4 text-right">Due Date:</label>
-                <input type="text" />
-                <input type="submit" class="btn btn-info submit col-md-3 offset-9" />
+                <p class="text-center">Add a new To Do Item:</p>
+                <input type="text" placeholder="Description..." class="inputDescrip offset-sm-3 col-sm-6 col-xs-12 offset-xs-1" />
+                <input type="text" placeholder="Due Date..." class="offset-sm-3 col-sm-6 col-xs-12 offset-xs-1" />
+                <input type="submit" class="btn btn-info submit col-xs-3 offset-9" />
             </div>
             <div class="seperator"></div>
             <div class="card-block row">
-                <label class="form-check-label col-md-8">
+                <label class="form-check-label col-md-8 col-sm-6">
                     <input type="checkbox" class="form-check-input" />
                     <span class="custom-check"></span>
-                    Todo List Item
+                    To Do List Item
                     <p class="text-right">Due Date</p>
                 </label>
-                <a href="#" class="col-md-1">Edit</a>
-                <a href="#" class="col-md-1 offset-1">Delete</a>
+                <a href="#" class="text-right col-md-1 col-sm-1 offset-xs-10">Edit</a>
+                <a href="#" class="text-right col-md-1 col-sm-1 offset-1 offset-xs-10">Delete</a>
             </div>
             <div class="seperator"></div>
             <div class="card-block">
                 <div class="form-check disabled row">
-                    <label class="form-check-label col-md-8 disabled">
+                    <label class="form-check-label col-sm-8 disabled">
                         <img src="img/glyphicons-check.png" alt="Checked Box. ">
-                        Completed Todo List Item
+                        Completed To Do List Item
                         <p class="text-right">Completed on...</p>
                     </label>
                     <a href="#" class="col-md-1">Uncomplete</a>

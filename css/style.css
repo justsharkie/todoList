@@ -33,6 +33,10 @@ label input {
     overflow: hidden;
 }
 
+.inputDescrip {
+    margin-bottom: 10px;
+}
+
 .submit {
     margin-top: 15px;
 }
