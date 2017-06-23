@@ -27,8 +27,6 @@
 li input {
     visibility: hidden;
     display: block;
-    height: 0;
-    width: 0;
     position: absolute;
     overflow: hidden;
 }
@@ -49,4 +47,9 @@ li {
 .todoItems {
     float: left;
 }
-
+.edit {
+    display: none;
+}
+.editing {
+    border-bottom: 2px solid #000;
+}
