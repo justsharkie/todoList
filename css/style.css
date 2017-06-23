@@ -24,13 +24,16 @@
     margin-top: 10px;
 }
 
-label input {
+li input {
     visibility: hidden;
     display: block;
     height: 0;
     width: 0;
     position: absolute;
     overflow: hidden;
+}
+li {
+    list-style-type: none;
 }
 
 .inputDescrip {
@@ -40,3 +43,10 @@ label input {
 .submit {
     margin-top: 15px;
 }
+.buttons {
+    float: right;
+}
+.todoItems {
+    float: left;
+}
+
