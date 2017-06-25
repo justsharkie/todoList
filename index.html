@@ -41,7 +41,7 @@
             </ul>
             <div class="seperator"></div>
             <ul class="card-block">
-                <li class="form-check disabled row" ng-repeat="complete in completed">
+                <li class="form-check disabled row" ng-repeat="complete in completed track by $index">
                     <label class="form-check-label col-sm-8 disabled">
                         <img src="img/glyphicons-check.png" alt="Checked Box. ">
                         {{complete.text}}
