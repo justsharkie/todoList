@@ -30,4 +30,10 @@ angular
             localStorage.setItem('done', JSON.stringify($scope.completed));
             localStorage.setItem('todos', JSON.stringify($scope.todos));
         };
+        $scope.uncompleteItem = function (index) {
+            $scope.todos.push($scope.completed[index]);
+            $scope.completed.splice(index, 1);
+            localStorage.setItem('done', JSON.stringify($scope.completed));
+            localStorage.setItem('todos', JSON.stringify($scope.todos));
+        }
     });

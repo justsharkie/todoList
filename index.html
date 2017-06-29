@@ -46,6 +46,7 @@
                         <img src="img/glyphicons-check.png" alt="Checked Box. ">
                         {{complete.text}}
                         <p class="text-right">Due {{complete.date}}</p>
+                        <a href="#" class="text-right col-sm-1 float-right" ng-click="uncompleteItem($index)">Uncomplete</a>
                     </label>
                 </li>
             </ul>
