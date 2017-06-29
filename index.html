@@ -28,7 +28,8 @@
                 <li ng-repeat="todo in todos track by $index" class="col-sm-12">
                     <label class="form-check-label col-md-8 col-sm-6 todoItems" ng-hide="editing">
                         <input type="checkbox" class="form-check-input" ng-click="completeItem($index)" />
-                        <span class="custom-check"></span> <div>{{todo.text}}</div>
+                        <span class="custom-check"></span> 
+                        <div>{{todo.text}}</div>
                         <p class="text-right">Due {{todo.date}}</p>
                     </label>
                     <input type="text" ng-model="todo.text" ng-show="editing" class="edit col-sm-6" />
