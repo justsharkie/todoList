@@ -33,7 +33,9 @@
                         <p class="text-right">Due {{todo.date}}</p>
                     </label>
                     <input type="text" ng-model="todo.text" ng-show="editing" class="edit col-sm-6" />
-                    <button type="submit" class="btn btn-info col-sm-2" ng-show="editing" ng-click="editing=false">Save</button>
+                    <input type="text" ng-model="todo.date" ng-show="editing" class="edit" />
+                    <br>
+                    <button type="submit" class="btn btn-info col-sm-3 offset-8" ng-show="editing" ng-click="editing=false">Save</button>
                     <div class="col-md-3 buttons text-right">
                         <a href="#" class="text-right col-sm-1 offset-xs-10" ng-click="editing=true">Edit</a>
                         <a href="#" class="text-right col-sm-1 offset-xs-10" ng-click="delete()">Delete</a>
@@ -42,12 +44,12 @@
             </ul>
             <div class="seperator"></div>
             <ul class="card-block">
-                <li class="form-check disabled row" ng-repeat="complete in completed track by $index">
-                    <label class="form-check-label col-sm-8 disabled">
-                        <img src="img/glyphicons-check.png" alt="Checked Box. ">
+                <li class="form-check row" ng-repeat="complete in completed track by $index">
+                    <label class="form-check-label col-sm-8"  ng-click="uncompleteItem($index)">
+                        <div class="disabled"><img src="img/glyphicons-check.png" alt="Checked Box. "></div>
                         {{complete.text}}
                         <p class="text-right">Due {{complete.date}}</p>
-                        <a href="#" class="text-right col-sm-1 float-right" ng-click="uncompleteItem($index)">Uncomplete</a>
+                        <a href="#" class="text-right col-sm-1 float-right">Uncomplete</a>
                     </label>
                 </li>
             </ul>
